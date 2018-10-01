@@ -1,0 +1,33 @@
+::ng-deep .continer-full-page{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+
+    
+}
+
+
+::ng-deep .boston-water{
+    background-image: url('./../assets/images/boston-water.jpg');
+    background-size: cover;
+}
+
+::ng-deep .boston-citgo {
+    background-image: url('./../assets/images/boston-citgo-black-white.jpg');
+    background-size: cover;
+}
+
+::ng-deep .capone-logo {    
+    height: 7em;
+    width: 9em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('./../assets/images/logo-800.svg')
+}
+
+
+::ng-deep .dark-theme {
+    background-color: #303030;
+}
