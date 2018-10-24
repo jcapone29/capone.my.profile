@@ -1,0 +1,97 @@
+@import "../../node_modules/fullpage.js/dist/fullpage.css";
+@import "../assets/styles/tokens.scss";
+
+::ng-deep .continer-full-page{
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: -1;
+
+}
+
+
+.cc-video-wall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+::ng-deep .cc-logo {    
+    height: 5em;
+    width: 10em;
+    background-repeat: no-repeat;
+    background-size: 15em;
+    background-position-x: -2em;
+    background-image: url('./../assets/images/logo-300.svg')
+}
+
+.cc-top-nav{
+    width: 100%;
+    height: 5em;
+    z-index: 1;
+    position: absolute;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.cc-nav-active{
+
+
+}
+
+.cc-nav-active::after {
+    // border-bottom: 3px solid #02ce66;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    border-radius: 50%;
+    border: 1px solid #02ce6669;
+}
+
+::ng-deep .cc-profile-img {    
+    height: 15em;
+    width: 15em;
+    background-repeat: no-repeat;
+    background-size: 16em;
+    border-radius: 50%;
+    background-image: url('./../assets/images/joe-capone-profile-img.png')
+}
+
+
+::ng-deep .desgin-img {
+    background-image: url('./../assets/images/splash-background-medium.jpg');
+    background-size: cover;
+    background-position-x: center;
+}
+
+
+
+::ng-deep .cc-container {    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+::ng-deep .cc-mark::before {
+    content: "";
+    position: relative;
+    z-index: -1;
+    left: 2em;
+    bottom: 2.3em;
+    height: 2px;
+    background: $cc-green;
+    height: 4px;
+    width: 4em;
+    border-radius: 4em;
+}
+
+::ng-deep .y-axis-align{
+    vertical-align: inherit !important;
+}
+

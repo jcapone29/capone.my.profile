@@ -1,0 +1,69 @@
+{
+    "pages": [
+        {
+            "title": "Home",
+            "anchorName": "main",
+            "showNav": true,
+            "isTouched": false,
+            "icon": "home" 
+        },
+        {
+            "title": "Skill Set",
+            "anchorName": "skill-set",
+            "showNav": false,
+            "isTouched": false,
+            "icon": "skill" 
+        },
+        {
+            "title": "About Me",
+            "anchorName": "about-me",
+            "showNav": true,
+            "isTouched": false,
+            "icon": "gears-in-bald-head-side-view" 
+        }
+    ],
+    "skillSetConfig": [
+        {
+            "title": "Innovation",
+            "label": "string",
+            "image": "light-bulb",
+            "bodyText": "string",
+            "footerText": "string"
+        }, 
+        {
+            "title": "Machine Learning",
+            "label": "string",
+            "image": "neural-net",
+            "bodyText": "string",
+            "footerText": "string"
+        },
+        {
+            "title": "Energy Commodities",
+            "label": "power-plant",
+            "image": "power-plant",
+            "bodyText": "string",
+            "footerText": "string"
+        },
+        {
+            "title": "Identiy Security",
+            "label": "string",
+            "image": "security",
+            "bodyText": "string",
+            "footerText": "string"
+        },
+        {
+            "title": "Crypto Trading",
+            "label": "string",
+            "image": "crypto",
+            "bodyText": "string",
+            "footerText": "string"
+        },
+        {
+            "title": "Workflow Optimization",
+            "label": "string",
+            "image": "workflow",
+            "bodyText": "string",
+            "footerText": "string"
+        }
+    ]
+}

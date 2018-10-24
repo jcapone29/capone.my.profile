@@ -24,9 +24,12 @@
               "src/assets/images"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"              
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/fullpage.js/dist/fullpage.min.js",
+              "./node_modules/jquery/dist/jquery.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -124,5 +127,10 @@
       }
     }
   },
-  "defaultProject": "joe-capone-profile"
+  "defaultProject": "joe-capone-profile",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

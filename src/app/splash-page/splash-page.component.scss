@@ -1,0 +1,46 @@
+@import "../../assets/styles/tokens.scss";
+
+.title-caption  {
+    font-family: 'Copse', serif;
+    font-size: 2.4em;
+    color: $cc-white;
+    text-transform: uppercase;
+    
+}
+
+
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.8s both;
+	        animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.8s both;
+}
+
+
+ @-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 2em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: .7em;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 2em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: .7em;
+      opacity: 1;
+    }
+  }
+  
+  

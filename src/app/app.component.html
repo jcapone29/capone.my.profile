@@ -1,3 +1,28 @@
+<div class="continer-full-page">
+    <div class="cc-top-nav" [ngClass]="showNav ? 'cc-nav-active' : 'cc-nav-inactive'">
+        <div class="cc-logo"></div>
+    </div>
 
-<app-splash-page></app-splash-page>
+    <app-side-nav [anchor]="anchor"></app-side-nav>
+    <div id="content-wrapper" [mnFullpage]="options" [mnFullpageNavigation]="false" [mnFullpageKeyboardScrolling]="true" [mnFullpageSlidesNavigation]="false"
+        mnFullpageSlidesNavPosition="bottom">
+        <div class="section  fp-section fp-table">
+                <video autoplay muted loop id="myVideo" class="cc-video-wall"  #videoPlayer>
+                        <source src="./../assets/videos/coding-loop.mp4" type="video/mp4">
+                      </video>
+            <div class="fp-tableCell">
+                <app-splash-page></app-splash-page>
+            </div>
+        </div>
+        <div class="section fp-section fp-table">
+            <div class="fp-tableCell y-axis-align">
+                <app-skill-set></app-skill-set>
+            </div>
+        </div>
+        <div class="section fp-section fp-table ">
+            <div class="fp-tableCell y-axis-align">
+                <app-about-me></app-about-me>
+            </div>
+        </div>
 
+    </div>
