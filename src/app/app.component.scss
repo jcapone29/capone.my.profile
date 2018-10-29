@@ -10,17 +10,15 @@
 
 }
 
+::ng-deep .cc-section {
+    width: 100%;
+}
 
-.cc-video-wall {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
 
 ::ng-deep .cc-logo {    
     height: 5em;
     width: 10em;
+    position: fixed;
     background-repeat: no-repeat;
     background-size: 15em;
     background-position-x: -2em;
@@ -37,18 +35,14 @@
     transition: background-color 200ms linear;
 }
 
-.cc-nav-active{
-
-
-}
 
 .cc-nav-active::after {
-    // border-bottom: 3px solid #02ce66;
     content: "";
     display: block;
     margin: 0 auto;
     width: 75%;
     border-radius: 50%;
+    margin-top: 5em;
     border: 1px solid #02ce6669;
 }
 
@@ -56,7 +50,7 @@
     height: 15em;
     width: 15em;
     background-repeat: no-repeat;
-    background-size: 16em;
+    background-size: 16em; 
     border-radius: 50%;
     background-image: url('./../assets/images/joe-capone-profile-img.png')
 }

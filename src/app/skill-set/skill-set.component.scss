@@ -2,57 +2,69 @@
 @import "../../assets/styles/tokens.scss";
 
 .cc-skill-set-container{
- background-color:  $cc-white;
+
 }
 
 .cc-card{
-    width: 30%;
-    border-radius: 10px;
-    box-shadow: $cc-box-shadow-dark;
-    margin: $cc-margin-xs;
-}
-
-.cc-card-container{
+    width: 48.5%;
+    height: 23em;
     position: relative;
-}
-
-.cc-card-title{
-    opacity: .9;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    position: relative;
-    height: 12em;
     background: #ffffff;
-    width: 100%;
+    box-shadow: 1px 4px 6px #171717;
+    margin: 5px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
 }
 
-.cc-card-title > label {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
+.cc-card-container{
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.cc-card-title-container{
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 0;
+}
+
+.cc-card-title {
     font-size: .8em;
     text-transform: uppercase;
     color: #ffffff;
-    background: #02ce66;
-    padding: .4em 1em .4em 1em;
-}
-
-.cc-card-body{
-    position: relative;
-    height: 5em;
-}
-
-.cc-card-footer{
-    height: 2em;
+    margin-left: auto;
+    width: 11em;
+    margin-right: auto;
+    border: 8px solid #02ce66;
+    padding: 10px;
+    z-index: 1;
     position: relative;
 }
 
-.cc-card::after{
-    border: 1px solid red;
-}
+// .cc-card-title-container:before{
+//     content: "";
+//     height: calc(50% - 1.2em);
+//     top: 0;
+//     width: .3em;
+//     background: #02ce66;
+//     position: absolute;
+//     margin: auto;
+//     z-index: 0;
+    
+// }
+
+// .cc-card-title-container:after{
+//     content: "";
+//     height: calc(50% - 1.2em);
+//     bottom: 0;
+//     width: .3em;
+//     background: #02ce66;
+//     position: absolute;
+//     margin: auto;
+// }
 
 .light-bulb{
     background-image: url('./../../assets/images/skill-set/light-bulb.jpg')
@@ -65,7 +77,7 @@
     background-image: url('./../../assets/images/skill-set/power-plant.jpg')
 }
 .security {
-    background-image: url('./../../assets/images/skill-set/security.jpg')
+    background-image: url('./../../assets/images/skill-set/security.png')
 }
 .crypto {
     background-image: url('./../../assets/images/skill-set/crypto.jpg')

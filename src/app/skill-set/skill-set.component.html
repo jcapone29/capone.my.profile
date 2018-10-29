@@ -1,11 +1,9 @@
 <div class="cc-container cc-skill-set-container">
-  <div class="cc-card" *ngFor="let skill of appConfigSvc.siteConfig.skillSetConfig;">
+  <div class="cc-card" (appear)="onAppear()" [ngClass]="skill.image" *ngFor="let skill of appConfigSvc.siteConfig.skillSetConfig;">
     <div class="cc-card-container">
-      <div class="cc-card-title" [ngClass]="skill.image">
-        <label >{{skill.title}}</label>
-      </div>
-      <div class="cc-card-body"></div>
+      <div class="cc-card-title-container">
+          <div class="cc-card-title" >{{skill.title}}</div>
+      </div>        
     </div>
-    <div class="cc-card-footer"></div>
   </div>
 </div>

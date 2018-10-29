@@ -3,7 +3,9 @@
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 
 
-body {
-    margin: 0;
-}
 
+
+
+html {
+    scroll-behavior: smooth;
+  }

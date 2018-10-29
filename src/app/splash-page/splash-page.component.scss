@@ -9,6 +9,13 @@
 }
 
 
+.cc-video-wall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 
 .tracking-in-contract {
 	-webkit-animation: tracking-in-contract 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.8s both;

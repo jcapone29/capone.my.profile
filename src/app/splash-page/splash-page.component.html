@@ -1,4 +1,7 @@
-    <div class="cc-container  cc-mark">
+    <div class="cc-container splash-container  cc-mark" [style.height.px]="splashHeight" (window:resize)="onResize($event)">
+            <video autoplay muted loop id="myVideo" class="cc-video-wall"  #videoPlayer>
+                    <source src="./../assets/videos/coding-loop.mp4" type="video/mp4">
+                  </video>
         <div class="title-caption tracking-in-contract">Engineer Desgin</div> 
         <div class="splash-navigation"></div>
      </div>

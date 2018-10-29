@@ -16,6 +16,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SideNavComponent } from './side-nav/side-nav.component'
 import { APP_INITIALIZER } from '@angular/core';
 import { AppConfigService } from './shared/services/app-config.service';
+import { AppearDirective } from './shared/directives/appear';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { AppConfigService } from './shared/services/app-config.service';
     SkillSetComponent,
     AboutMeComponent,
     SideNavComponent,
+    AppearDirective
   ],
   imports: [
     BrowserModule,

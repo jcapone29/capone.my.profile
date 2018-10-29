@@ -16,4 +16,8 @@ export class SkillSetComponent implements OnInit {
 
   }
 
+  onAppear() {
+    console.log('test');
+  }
+
 }
