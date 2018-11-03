@@ -28,42 +28,48 @@
             "label": "string",
             "image": "light-bulb",
             "bodyText": "string",
-            "footerText": "string"
+            "footerText": "string",
+            "visable": false
         }, 
         {
             "title": "Machine Learning",
             "label": "string",
             "image": "neural-net",
             "bodyText": "string",
-            "footerText": "string"
+            "footerText": "string",
+            "visable": false
         },
         {
             "title": "Energy Commodities",
             "label": "power-plant",
             "image": "power-plant",
             "bodyText": "string",
-            "footerText": "string"
+            "footerText": "string",
+            "visable": false
         },
         {
             "title": "Identiy Security",
             "label": "string",
             "image": "security",
             "bodyText": "string",
-            "footerText": "string"
+            "footerText": "string",
+            "visable": false
         },
         {
             "title": "Crypto Trading",
             "label": "string",
             "image": "crypto",
             "bodyText": "string",
-            "footerText": "string"
+            "footerText": "string",
+            "visable": false
         },
         {
             "title": "Workflow Optimization",
             "label": "string",
             "image": "workflow",
             "bodyText": "string",
-            "footerText": "string"
+            "footerText": "string",
+            "visable": false
         }
     ]
 }

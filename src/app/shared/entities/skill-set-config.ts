@@ -7,4 +7,5 @@ export class SkillSetConfig{
     image: string;
     bodyText: string;
     footerText: string;
+    visable = false;
 }

@@ -9,12 +9,8 @@
     width: 48.5%;
     height: 23em;
     position: relative;
-    background: #ffffff;
-    box-shadow: 1px 4px 6px #171717;
     margin: 5px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
+    max-width: 34em;
 }
 
 
@@ -23,12 +19,22 @@
     display: table;
     height: 100%;
     width: 100%;
+    background: #ffffff;
+    box-shadow: 1px 4px 6px #171717;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
 }
 
 .cc-card-title-container{
     display: table-cell;
     vertical-align: middle;
     z-index: 0;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
 .cc-card-title {
@@ -38,33 +44,36 @@
     margin-left: auto;
     width: 11em;
     margin-right: auto;
-    border: 8px solid #02ce66;
+    border: 8px solid $cc-green;
     padding: 10px;
     z-index: 1;
     position: relative;
+
 }
 
-// .cc-card-title-container:before{
-//     content: "";
-//     height: calc(50% - 1.2em);
-//     top: 0;
-//     width: .3em;
-//     background: #02ce66;
-//     position: absolute;
-//     margin: auto;
-//     z-index: 0;
-    
-// }
+.cc-card-title-container:hover{
+    background-color: $cc-green;
+    cursor: pointer;
 
-// .cc-card-title-container:after{
-//     content: "";
-//     height: calc(50% - 1.2em);
-//     bottom: 0;
-//     width: .3em;
-//     background: #02ce66;
-//     position: absolute;
-//     margin: auto;
-// }
+}
+
+.cc-card-line{
+    
+    -moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.cc-card-line:before{
+    content: "";
+    height: calc(50% - 1.2em);
+    bottom: 0;
+    width: .3em;
+    background: $cc-green;
+    position: absolute;
+    margin: auto;
+}
 
 .light-bulb{
     background-image: url('./../../assets/images/skill-set/light-bulb.jpg')

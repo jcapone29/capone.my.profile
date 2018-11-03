@@ -24,7 +24,8 @@
               "src/assets/images"
             ],
             "styles": [
-              "src/styles.scss"              
+              "src/styles.scss",
+              "./node_modules/animate.css/animate.css"
             ],
             "scripts": [
               "./node_modules/fullpage.js/dist/fullpage.min.js",

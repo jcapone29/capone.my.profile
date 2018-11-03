@@ -22,6 +22,7 @@
     background-repeat: no-repeat;
     background-size: 15em;
     background-position-x: -2em;
+
     background-image: url('./../assets/images/logo-300.svg')
 }
 
@@ -43,7 +44,7 @@
     width: 75%;
     border-radius: 50%;
     margin-top: 5em;
-    border: 1px solid #02ce6669;
+    border: 1px solid $cc-green;
 }
 
 ::ng-deep .cc-profile-img {    

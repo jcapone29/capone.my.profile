@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AppConfigService } from '../shared/services/app-config.service';
-
 @Component({
   selector: 'app-skill-set',
   templateUrl: './skill-set.component.html',
@@ -8,6 +7,7 @@ import { AppConfigService } from '../shared/services/app-config.service';
 })
 export class SkillSetComponent implements OnInit {
 
+  public mouseOverIndex = -1;
   constructor(public appConfigSvc: AppConfigService) { 
 
   }
@@ -16,8 +16,8 @@ export class SkillSetComponent implements OnInit {
 
   }
 
-  onAppear() {
-    console.log('test');
+  onAppear(index: number) {
+    this.appConfigSvc.siteConfig.skillSetConfig[index].visable = true;
   }
 
 }

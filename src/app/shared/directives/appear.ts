@@ -79,6 +79,7 @@ import { Subscription, Observable, fromEvent } from 'rxjs';
   
     ngAfterViewInit(){
       this.subscribe();
+      window.dispatchEvent(new Event('resize'))
     }
     ngOnDestroy(){
       this.unsubscribe();
