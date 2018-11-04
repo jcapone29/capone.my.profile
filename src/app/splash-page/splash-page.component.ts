@@ -8,19 +8,18 @@ import { Input } from '@angular/core';
   styleUrls: ['./splash-page.component.scss']
 })
 export class SplashPageComponent implements OnInit {
-  @ViewChild('videoPlayer') videoplayer: any;
+ // @ViewChild('videoPlayer') videoplayer: any;
   @Input() splashHeight: number;
   @Input() playVideo: boolean;
+  @Input() scrollPosition: number;
   constructor() { }
 
   ngOnInit() {
     this.splashHeight = (window.innerHeight);
-    this.playVideo ? this.videoplayer.nativeElement.play() : 
-    this.videoplayer.nativeElement.pause();
+    //this.playVideo ? this.videoplayer.nativeElement.play() :  this.videoplayer.nativeElement.pause();
   }
 
-  onResize(event) {
-    console.log( this.playVideo )
+  onResize(event) {   
     this.splashHeight = event.target.innerHeight;
   }
 }

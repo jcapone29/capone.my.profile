@@ -5,21 +5,21 @@
             "anchorName": "main",
             "showNav": true,
             "isTouched": false,
-            "icon": "home" 
+            "icon": "home"
         },
         {
             "title": "Skill Set",
             "anchorName": "skill-set",
             "showNav": false,
             "isTouched": false,
-            "icon": "skill" 
+            "icon": "skill"
         },
         {
             "title": "About Me",
             "anchorName": "about-me",
             "showNav": true,
             "isTouched": false,
-            "icon": "gears-in-bald-head-side-view" 
+            "icon": "gears-in-bald-head-side-view"
         }
     ],
     "skillSetConfig": [
@@ -30,7 +30,7 @@
             "bodyText": "string",
             "footerText": "string",
             "visable": false
-        }, 
+        },
         {
             "title": "Machine Learning",
             "label": "string",
@@ -70,6 +70,35 @@
             "bodyText": "string",
             "footerText": "string",
             "visable": false
+        }
+    ],
+    "codeLanguagesConfig": [
+        {
+            "image": "angular"
+        },
+        {
+            "image": "auth0"
+        },
+        {
+            "image": "aws"
+        },
+        {
+            "image": "azure"
+        },
+        {
+            "image": "dotnet"
+        },
+        {
+            "image": "python"
+        },
+        {
+            "image": "react"
+        },
+        {
+            "image": "salesforce"
+        },
+        {
+            "image": "sql"
         }
     ]
 }

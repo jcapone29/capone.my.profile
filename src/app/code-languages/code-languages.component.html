@@ -1,0 +1,9 @@
+<div class="cc-container code-language-container">
+  <div class="code-language-card" *ngFor="let skill of appConfigSvc.siteConfig.codeLanguagesConfig; let i = index">
+    <div class="code-icon-conainer">
+        <div class="code-icon" [ngClass]="skill.image">
+            &nbsp;
+          </div>
+    </div>    
+  </div>
+</div>

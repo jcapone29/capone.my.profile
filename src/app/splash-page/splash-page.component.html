@@ -1,7 +1,16 @@
-    <div class="cc-container splash-container  cc-mark" [style.height.px]="splashHeight" (window:resize)="onResize($event)">
-            <video autoplay muted loop id="myVideo" class="cc-video-wall"  #videoPlayer>
-                    <source src="./../assets/videos/coding-loop.mp4" type="video/mp4">
-                  </video>
-        <div class="title-caption tracking-in-contract">Engineer Desgin</div> 
-        <div class="splash-navigation"></div>
+    <div class="cc-container splash-container  " [style.height.px]="splashHeight" (window:resize)="onResize($event)">
+        <div  [hidden]="scrollPosition > 100" >
+                <!-- <video autoplay muted loop id="myVideo" class="cc-video-wall"  [style.height.px]="splashHeight"  #videoPlayer>
+                        <source src="./../assets/videos/coding-loop.mp4" type="video/mp4">
+                      </video> -->
+        </div>
+        <div class="title-caption tracking-in-contract cc-mark">Engineer Desgin</div> 
+        <div class="cc-call-me-container tracking-in-contract">
+            <div class="cc-info-btn">
+                Contact
+            </div>
+            <div class="cc-info-btn">
+                GitHub 
+            </div>
+        </div>
      </div>

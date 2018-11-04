@@ -6,4 +6,5 @@ import { SkillSetConfig } from './skill-set-config';
 export class SiteConfig{
     pages: Array<AnchorInfo>;
     skillSetConfig: Array<SkillSetConfig>;
+    codeLanguagesConfig: Array<SkillSetConfig>;
 }

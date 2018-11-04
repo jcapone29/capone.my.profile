@@ -9,7 +9,7 @@ import { AppConfigService } from '../shared/services/app-config.service';
 })
 export class SideNavComponent implements OnInit {
   @Input() anchor: any;
-  
+  @Input() scrollPosition: number;
   public navActive = false;  
   public navAnchors = ['Main', 'Skill Set','About Me']
 

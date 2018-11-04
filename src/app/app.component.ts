@@ -13,6 +13,7 @@ export class AppComponent {
 
 
   public showNav = true;
+  public scrollPosition = 0;
   public splashHeight : number;
 
   constructor() { 
@@ -29,5 +30,6 @@ export class AppComponent {
 
   @HostListener('window:scroll', ['$event']) onScrollEvent($event){
     this.showNav = window.pageYOffset < this.splashHeight;
+    this.scrollPosition =  window.pageYOffset;
   }   
 }

@@ -17,6 +17,7 @@ import { SideNavComponent } from './side-nav/side-nav.component'
 import { APP_INITIALIZER } from '@angular/core';
 import { AppConfigService } from './shared/services/app-config.service';
 import { AppearDirective } from './shared/directives/appear';
+import { CodeLanguagesComponent } from './code-languages/code-languages.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { AppearDirective } from './shared/directives/appear';
     SkillSetComponent,
     AboutMeComponent,
     SideNavComponent,
-    AppearDirective
+    AppearDirective,
+    CodeLanguagesComponent
   ],
   imports: [
     BrowserModule,
